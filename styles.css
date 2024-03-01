@@ -1,0 +1,39 @@
+:root {
+    --background: #f8f8ff;
+}
+h1{
+    text-align: center;
+}
+section {
+    display: grid;
+    place-items: center;
+    background-color: var(--background);
+}
+.gallery {
+    display: flex;
+    gap: 1rem;
+    max-width: 80rem;
+}
+.card {
+    position: relative;
+    left: 0;
+    flex: 0.25;
+    width: 6rem;
+    height: 20rem;
+    overflow: hidden;
+    background-color: var(--background);
+    border-radius: 1.2rem;
+    box-shadow: 0 5px 12px #0000004d;
+    transition: 0.4s ease-in-out;
+}
+.card img {
+    position: relative;
+    height: 20rem;
+    object-fit: cover;
+}
+.card:hover {
+    flex: 2;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+}
